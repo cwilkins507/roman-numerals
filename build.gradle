@@ -8,14 +8,14 @@ ext.snapshotVersion = true
 version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
 
 repositories {
-	maven {
-		url 'http://www.nexus.ford.com/repository/external-proxy-group/'
-	}
+    maven {
+        url 'http://www.nexus.ford.com/repository/external-proxy-group/'
+    }
 }
 
 defaultTasks 'test'
 
 dependencies {
-	testCompile "junit:junit:4.12"
-	testCompile "org.assertj:assertj-core:3.10.0"
+    testCompile "junit:junit:4.12"
+    testCompile "org.assertj:assertj-core:3.10.0"
 }
