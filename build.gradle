@@ -9,14 +9,13 @@ version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
 
 repositories {
 	maven {
-		url 'http://www.nexus.ford.com/content/groups/public'
-	}
-	maven {
-		url 'http://www.nexus.ford.com/content/repositories/ford_experimental_repository'
+		url 'http://www.nexus.ford.com/repository/external-proxy-group/'
 	}
 }
 
+defaultTasks 'test'
+
 dependencies {
 	testCompile "junit:junit:4.12"
-	testCompile "org.assertj:assertj-core:1.7.1"
+	testCompile "org.assertj:assertj-core:3.10.0"
 }
