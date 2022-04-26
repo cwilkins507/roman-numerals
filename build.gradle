@@ -1,21 +1,14 @@
-apply plugin: 'java'
-apply plugin: 'maven'
-
-group = 'com.ford.acoe.craftsmanship'
-ext.baseVersion = '1.0.0'
-ext.snapshotVersion = true
-
-version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
+plugins  {
+    id 'java'
+}
 
 repositories {
-    maven {
-        url 'http://www.nexus.ford.com/repository/external-proxy-group/'
-    }
+    mavenCentral()
 }
-
-defaultTasks 'test'
 
 dependencies {
-    testCompile "junit:junit:4.12"
-    testCompile "org.assertj:assertj-core:3.10.0"
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
 }
+

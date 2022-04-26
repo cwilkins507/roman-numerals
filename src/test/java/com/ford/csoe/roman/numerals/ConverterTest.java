@@ -1,4 +1,4 @@
-package com.ford.acoe.craftsman.romannumeralconversion;
+package com.ford.csoe.roman.numerals;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

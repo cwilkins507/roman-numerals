@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "America/Detroit",
+  "schedule": [
+    "before 5pm"
+  ],
+  "extends": [
+    "config:base"
+  ],
+  "gradle": {
+    "enabled": false
+  },
+  "gradle-lite": {
+    "enabled": true
+  },
+  "packageRules": [],
+  "separateMajorMinor": true,
+  "prCreation": "immediate",
+  "rebaseWhen": "behind-base-branch",
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
