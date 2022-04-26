@@ -17,4 +17,4 @@ M is 1,000. You see a lot of Ms because Roman numerals are used a lot to indicat
 # V
 Larger numbers were indicated by putting a horizontal line over them, which meant to multiply the number by 1,000. Hence the V at left has a line over the top, which means 5,000. This usage is no longer current, because the largest numbers usually expressed in the Roman system are dates, as discussed above.
 
-Write a convertor to convert from Roman to Arabic….
+Write a convertor to convert from Arabic to Roman and vice-versa taking accounting for numbers between 1 and 3000....
