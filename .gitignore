@@ -6,3 +6,6 @@ bin
 .project
 .idea
 *.iml
+
+.java-version
+
