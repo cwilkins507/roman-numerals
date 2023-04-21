@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Converter implements RomanNumeralConverter {
 
-    private static Map<Integer, String> ARABIC_TO_ROMAN = new LinkedHashMap<>();
+    private static final Map<Integer, String> ARABIC_TO_ROMAN = new LinkedHashMap<>();
 
     static {
         ARABIC_TO_ROMAN.put(1000, "M");
